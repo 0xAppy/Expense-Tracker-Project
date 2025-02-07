@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e9e9e9;
+    color: #ffffff;
+}
+
+
+main {
+    margin-left: 200px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+
+/* Variables for light and dark mode */
+:root {
+    --background-color: #fff;
+    --text-color: #333;
+    --sidebar-background: #f4f4f4;
+    --button-background: #28a745;
+    --button-hover: #fda500;
+    --toggle-background: #ddd;
+}
+
+.dark-mode {
+    --background-color: #333;
+    --text-color: #fff;
+    --sidebar-background: #2c2c2c;
+    --button-background: #fda500;
+    --toggle-background: #555;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.sidebar {
+    width: 230px;
+    height: 100vh;
+    background-color: var(--sidebar-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar-header img {
+    width: 90px;
+    border-radius: 50%;
+    margin-top: 20%;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    margin-top: 270px;
+}
+
+.nav-menu li {
+    padding: 10px 20px;
+}
+
+.nav-menu li a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li a i {
+    margin-right: 10px;
+}
+
+.nav-menu li:hover {
+    background-color:rgb(255, 166, 0);
+    width: 125%;}
+
+.sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid goldenrod;
+}
+
+.logout-button {
+    background-color: var(--button-background);
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 34px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logout-button i {
+    margin-right: 5px;
+}
+
+.logout-button:hover {
+    background-color: var(--button-hover);
+}
+
+/* The switch container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin-left: 18px;
+    bottom: 3px;
+}
+
+/* Hide default checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Slider for switch */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--toggle-background);
+    transition: 0.5s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Switch color when checked */
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+/* Move slider when checked */
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+/* Rounded switch */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+section{
+    margin-top: 10%;
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid #000f94;
+    background-color: #0127ff;
+    color: #e6d70d;
+}
+
+td {
+    padding: 10px;
+    border: 1px dotted black;
+}
+
+.button, .button7 {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button:hover, .button7:hover {
+    background-color: #fda500;
+    color: white;
+}
+
+#expenseName{
+    border-radius: 10px;
+    padding: 5px;
+}
+#expenseAmount{
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 5px;
+}
+.logoutbutton {
+    padding: 10px;
+    margin-left: 189px;
+    background-color: #ff0000;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(231, 6, 6);
+
+}
+
+.button7 {
+    padding: 10px;
+    background-color: #28a745;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.button7:hover {
+    padding: 10px;
+    background-color: #fda500;
+    color: rgb(70, 56, 56);
+    border: none;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+

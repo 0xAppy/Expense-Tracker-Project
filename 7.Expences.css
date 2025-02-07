@@ -1,0 +1,434 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e9e9e9;
+    color: #ffffff;
+}
+
+
+main {
+    margin-left: 200px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+
+/* Variables for light and dark mode */
+:root {
+    --background-color: #fff;
+    --text-color: #333;
+    --sidebar-background: #f4f4f4;
+    --button-background: #28a745;
+    --button-hover: #fda500;
+    --toggle-background: #ddd;
+}
+
+.dark-mode {
+    --background-color: #333;
+    --text-color: #fff;
+    --sidebar-background: #2c2c2c;
+    --button-background: #fda500;
+    --toggle-background: #555;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.sidebar {
+    width: 230px;
+    height: 100vh;
+    background-color: var(--sidebar-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar-header img {
+    width: 90px;
+    border-radius: 50%;
+    margin-top: 20%;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    margin-top: 270px;
+}
+
+.nav-menu li {
+    padding: 10px 20px;
+}
+
+.nav-menu li a {
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li a i {
+    margin-right: 10px;
+}
+
+.nav-menu li:hover {
+    background-color: rgb(255, 166, 0);
+    width: 125%;
+}
+
+
+.sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid goldenrod;
+}
+
+.logout-button {
+    background-color: var(--button-background);
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 34px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout-button i {
+    margin-right: 5px;
+}
+
+.logout-button:hover {
+    background-color: var(--button-hover);
+}
+
+/* The switch container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin-left: 18px;
+    bottom: 3px;
+}
+
+/* Hide default checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Slider for switch */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--toggle-background);
+    transition: 0.5s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* Switch color when checked */
+input:checked+.slider {
+    background-color: #f39f21;
+}
+
+/* Move slider when checked */
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+/* Rounded switch */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Right Display */
+
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid #ffe600;
+    background-color: #7801ff;
+    color: #ffffff;
+}
+
+td {
+    padding: 10px;
+
+}
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+
+
+#balance {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#outOfMoney {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+
+#top {
+    margin-left: 200px;
+}
+
+#expenseDate {
+    border-radius: 34px;
+    padding: 10px;
+    width: 170px;
+    background-color: #a1afff;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+
+    border-radius: 20px;
+}
+
+#expenseName {
+    border-radius: 34px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#expenseAmount {
+    border-radius: 34px;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+
+.button7 {
+    /* Add Expences button */
+    padding: 10px;
+    width: 150px;
+    background-color: #ff7b00;
+    margin-top: 20px;
+    text-indent: 24px;
+    border-radius: 34px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.button7:hover {
+    padding: 10px;
+    background-color: #0011fd;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#historyBtn {
+    margin-top: 20px;
+}
+
+#budgetForm {
+    margin-bottom: 20px;
+}
+
+#budgetLimit {
+    border-radius: 34px;
+    padding: 15px;
+    border-width: 1px;
+    margin-right: 10px;
+}
+
+.button12 {
+    padding: 10px;
+    width: 150px;
+    background-color: #ff7b00;
+    margin-top: 20px;
+    text-indent: 24px;
+    border-radius: 34px;
+    color: rgb(252, 251, 251);
+    border: none;
+    cursor: pointer;
+}
+
+.button12:hover {
+    background-color: #fd0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    border: none;
+    border-radius: 34px;
+    box-shadow: px px px rgba(0, 0, 0, 0.15);
+    background: #226105;
+}
+
+button,
+button span {
+    transition: 200ms;
+}
+
+button .text {
+    transform: translateX(5px);
+    color: white;
+    font-weight: bold;
+}
+
+button .icon {
+    position: absolute;
+    border-left: 0px solid #5eff00;
+    transform: translateX(100px);
+    height: 4px;
+    width: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button svg {
+    width: 15px;
+    fill: #ffffff;
+}
+
+button:hover {
+    background: #ff0000;
+}
+
+button:hover .text {
+    color: transparent;
+}
+
+button:hover .icon {
+    width: 10px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active .icon svg {
+    transform: scale(0.9);
+}
+
+.gemini {
+    background: radial-gradient(circle, rgb(255, 166, 0), rgb(0, 47, 255));
+    background-clip: text;
+    font-size: 40px;
+    color: transparent;
+    animation: gemini 15s linear infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gemini {
+
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+#balance {
+    background: radial-gradient(circle, rgb(0, 0, 0), yellow);
+    background-clip: text;
+    font-size: 40px;
+    color: transparent;
+    animation: gemini 5s linear infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes balance {
+
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+

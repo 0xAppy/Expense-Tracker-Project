@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard - Expense Tracker</title>
+        <link rel="stylesheet" href="5.dashstyles.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    </head>
+    <body>
+
+        <div id="container">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <div class="brand-logo">
+                        <img src="2.1.3logo.png" alt="Logo">
+                    </div>
+                    <h3>Expence Tracker</h3>
+
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="4.dashboard1.html"><i class="fas fa-home"></i>
+                            Dashboard</a></li>
+                    <li><a href="6.Expences.html"><i class="fas fa-home"></i>Add
+                            Expences</a></li>
+                    <li><a href="8.history.html"><i
+                                class="fas fa-chart-line"></i> History</a></li>
+                    <li><a href="11.Buddgetplanner.html"><i
+                                class="fas fa-chart-line"></i> Buddget
+                            Tips</a></li>
+                    <li><a href="12.Aboutus.html"><i
+                                class="fas fa-chart-bar"></i> About Us</a></li>
+
+                </ul>
+
+                <div class="sidebar-footer">
+                    <div class="theme-toggle">
+                        <span>Dark Mode</span>
+                        <label class="switch">
+                            <input type="checkbox" id="themeToggle">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <button id="logoutBtn" class="logout-button"><i
+                            class="fas fa-sign-out-alt"></i> Logout</button>
+                    <p style="font-style: italic ; font-size: xx-small;">Web
+                        Version 3.0.0 AY</p>
+                </div>
+            </div>
+            <main>
+                <section>
+                    <p id="balance" style="font-size: 50px;">Current Balance:
+                        ₹0.00</p>
+                    <p id="outOfMoney" style="color: red; display: none;">You
+                        are out of money!</p>
+                </section>
+                <hr style="border-width: px;border-color: goldenrod;">
+                <section>
+
+                    <!-- Your existing content here -->
+                    <script src="3.appv2.js"></script>
+
+                </html>
